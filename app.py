@@ -13,7 +13,6 @@ def extract_text():
 
     if image_file.filename == '':
         return jsonify({'error': 'No image filename provided'})
-    # Example of adding any additional options
 
     image = Image.open(image_file)
     custom_oem_psm_config = r'--oem 3 --psm 1'
