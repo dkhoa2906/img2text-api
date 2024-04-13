@@ -4,7 +4,7 @@ from PIL import Image
 
 app = Flask(__name__)
 
-@app.route('/img2text', methods=['POST'])
+@app.route('/', methods=['POST'])
 def extract_text():
     if 'image' not in request.files:
         return jsonify({'error': 'No image provided'})
